@@ -100,24 +100,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-enforcer-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>enforce-no-snapshot-prod</id>
-                                <phase>validate</phase>
-                                <goals>
-                                    <goal>enforce</goal>
-                                </goals>
-                                <configuration>
-                                    <rules>
-                                        <!-- Le projet et son parent ne doivent pas être en SNAPSHOT -->
-                                        <requireReleaseVersion />
-                                        <!-- Aucune dépendance ne doit être en SNAPSHOT -->
-                                        <requireReleaseDeps />
-                                    </rules>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
+                      </plugin>
                 </plugins>
             </build>
         </profile>
